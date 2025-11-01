@@ -4,6 +4,7 @@ import { AuthProvider } from './context/AuthContext.tsx';
 import Login from './pages/Login.tsx';
 import Signup from './pages/Signup.tsx';
 import Dashboard from './pages/Dashboard.tsx';
+import Profile from './pages/Profile.tsx';
 import ProtectedRoute from './components/ProtectedRoute.tsx';
 
 const App: React.FC = () => {
@@ -18,6 +19,14 @@ const App: React.FC = () => {
             element={
               <ProtectedRoute>
                 <Dashboard />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/profile"
+            element={
+              <ProtectedRoute>
+                <Profile />
               </ProtectedRoute>
             }
           />
