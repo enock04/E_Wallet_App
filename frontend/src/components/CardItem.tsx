@@ -11,7 +11,7 @@ const CardItem: React.FC<CardItemProps> = ({ card, onClick }) => {
     if (number.startsWith('ID-') || number.startsWith('DL-') || number.startsWith('MP-')) {
       return number;
     }
-    return **** **** **** ${number.slice(-4)};
+    return `**** **** **** ${number.slice(-4)}`;
   };
 
   const getCardColor = (categoryId: string) => {
