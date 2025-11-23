@@ -4,6 +4,7 @@ import { supabase } from './supabaseClient';
 import authRoutes from './routes/auth';
 import cardsRoutes from './routes/cards';
 
+
 const app = express();
 
 // Enable CORS for frontend origin

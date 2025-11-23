@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react';
 import { AuthContext, AuthContextType } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 
+
 const OtpVerification: React.FC = () => {
   const [email, setEmail] = useState('');
   const [otpCode, setOtpCode] = useState('');

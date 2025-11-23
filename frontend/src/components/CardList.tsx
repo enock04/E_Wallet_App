@@ -3,6 +3,7 @@ import CardItem from './CardItem';
 import CardDetailModal from './CardDetailModal';
 import { Card } from '../pages/Dashboard';
 
+
 interface CardListProps {
   cards: Card[];
   onEditCard?: (card: Card) => void;

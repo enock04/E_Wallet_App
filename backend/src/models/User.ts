@@ -55,3 +55,4 @@ export async function findUserByEmail(supabase: any, email: string): Promise<IUs
     createdAt: data.created_at,
   };
 }
+

@@ -1,5 +1,6 @@
 import mongoose, { Document, Schema } from 'mongoose';
 
+
 export interface IVerificationRecord extends Document {
   cardId: string;
   method: 'selfie_video' | 'otp' | 'biometric';

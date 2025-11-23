@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card } from '../pages/Dashboard';
 
+
 interface CardItemProps {
   card: Card;
   onClick: (card: Card) => void;

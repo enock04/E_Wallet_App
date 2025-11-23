@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 
+
 const Profile: React.FC = () => {
   const { user, token, logout } = useAuth();
   const navigate = useNavigate();

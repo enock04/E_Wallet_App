@@ -1,5 +1,6 @@
 import mongoose, { Document, Schema } from 'mongoose';
 
+
 export interface ILoginOTP extends Document {
   userId: string;
   otpCode: string;

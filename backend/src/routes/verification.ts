@@ -4,6 +4,7 @@ import jwt from 'jsonwebtoken';
 import VerificationRecord from '../models/VerificationRecord';
 import Card from '../models/Card';
 
+
 const router = express.Router();
 
 interface AuthenticatedRequest extends Request {

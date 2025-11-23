@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import { Card } from './Dashboard';
 
+
 const Payment: React.FC = () => {
   const { user, token } = useAuth();
   const navigate = useNavigate();

@@ -7,6 +7,7 @@ export interface ILoginOTP {
   createdAt: string;
 }
 
+
 // Table name: 'login_otps'
 
 // Create a new OTP record

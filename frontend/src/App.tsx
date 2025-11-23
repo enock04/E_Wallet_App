@@ -9,6 +9,7 @@ import Payment from './pages/Payment';
 import OtpVerification from './pages/OtpVerification';
 import ProtectedRoute from './components/ProtectedRoute';
 
+
 const App: React.FC = () => {
   return (
     <AuthProvider>

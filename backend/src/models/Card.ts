@@ -1,5 +1,6 @@
 import mongoose, { Document, Schema } from 'mongoose';
 
+
 export interface ICard extends Document {
   name: string;
   number: string;

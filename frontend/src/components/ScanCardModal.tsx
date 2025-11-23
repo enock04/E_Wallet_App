@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import Webcam from 'react-webcam';
 import { Card, Category } from '../pages/Dashboard';
 
+
 interface ScanCardModalProps {
   categories: Category[];
   onScanComplete: (scannedCardData: Omit<Card, 'id'>) => void;

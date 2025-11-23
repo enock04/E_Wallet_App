@@ -3,6 +3,7 @@ import { Card } from '../pages/Dashboard';
 import { useAuth } from '../context/AuthContext';
 import PossessionAuthModal from './PossessionAuthModal';
 
+
 interface Transaction {
   id: string;
   cardId: string;

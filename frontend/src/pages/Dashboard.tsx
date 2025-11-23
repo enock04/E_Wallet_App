@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import CardList from '../components/CardList';
 import AddCardModal from '../components/AddCardModal';
 
+
 export interface Category {
   id: string;
   name: string;

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 interface HeaderProps {
   user: string | null;
   onLogout: () => void;
