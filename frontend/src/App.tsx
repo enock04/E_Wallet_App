@@ -1,11 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import { AuthProvider } from './context/AuthContext.tsx';
-import Login from './pages/Login.tsx';
-import Signup from './pages/Signup.tsx';
-import Dashboard from './pages/Dashboard.tsx';
-import Profile from './pages/Profile.tsx';
-import ProtectedRoute from './components/ProtectedRoute.tsx';
+import { AuthProvider } from './context/AuthContext';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
+import Dashboard from './pages/Dashboard';
+import Profile from './pages/Profile';
+import Payment from './pages/Payment';
+import OtpVerification from './pages/OtpVerification';
+import ProtectedRoute from './components/ProtectedRoute';
 
 const App: React.FC = () => {
   return (
@@ -14,6 +16,7 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/otp-verification" element={<OtpVerification />} />
           <Route
             path="/dashboard"
             element={
@@ -27,6 +30,14 @@ const App: React.FC = () => {
             element={
               <ProtectedRoute>
                 <Profile />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/payment"
+            element={
+              <ProtectedRoute>
+                <Payment />
               </ProtectedRoute>
             }
           />

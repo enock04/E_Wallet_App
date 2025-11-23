@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
-import CardItem from './CardItem.tsx';
-import CardDetailModal from './CardDetailModal.tsx';
-import { Card } from '../pages/Dashboard.tsx';
+import CardItem from './CardItem';
+import CardDetailModal from './CardDetailModal';
+import { Card } from '../pages/Dashboard';
 
 interface CardListProps {
   cards: Card[];
+  onEditCard?: (card: Card) => void;
+  onDeleteCard?: (cardId: string) => void;
 }
 
-const CardList: React.FC<CardListProps> = ({ cards }) => {
+const CardList: React.FC<CardListProps> = ({ cards, onEditCard, onDeleteCard }) => {
   const [selectedCard, setSelectedCard] = useState<Card | null>(null);
 
   const handleCardClick = (card: Card) => {
@@ -28,7 +30,10 @@ const CardList: React.FC<CardListProps> = ({ cards }) => {
         ))
       )}
       {selectedCard && (
-        <CardDetailModal card={selectedCard} onClose={closeModal} />
+        <CardDetailModal
+          card={selectedCard}
+          onClose={closeModal}
+        />
       )}
     </div>
   );

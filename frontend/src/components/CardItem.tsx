@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from '../pages/Dashboard.tsx';
+import { Card } from '../pages/Dashboard';
 
 interface CardItemProps {
   card: Card;
@@ -31,6 +31,14 @@ const CardItem: React.FC<CardItemProps> = ({ card, onClick }) => {
     }
   };
 
+  const getVerificationStatusClass = (status: string) => {
+    switch (status) {
+      case 'verified': return 'verified';
+      case 'failed': return 'failed';
+      default: return 'pending';
+    }
+  };
+
   return (
     <div
       className="card-item"
@@ -44,7 +52,13 @@ const CardItem: React.FC<CardItemProps> = ({ card, onClick }) => {
           <span className="card-name">{card.name}</span>
           {card.expiry && <span className="card-expiry">{card.expiry}</span>}
         </div>
+        <div className="card-holder">{card.cardHolder}</div>
       </div>
+      {card.verifiedStatus && (
+        <div className={`card-verification-status ${getVerificationStatusClass(card.verifiedStatus)}`}>
+          {card.verifiedStatus}
+        </div>
+      )}
     </div>
   );
 };

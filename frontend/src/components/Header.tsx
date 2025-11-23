@@ -21,6 +21,11 @@ const Header: React.FC<HeaderProps> = ({ user, onLogout, onAddCard }) => {
               👤 Profile
             </button>
           </Link>
+          <Link to="/payment" style={{ textDecoration: 'none' }}>
+            <button className="payment-nav-btn" style={{ marginRight: '10px' }}>
+              💳 Make Payment
+            </button>
+          </Link>
           <button className="add-card-btn" onClick={onAddCard}>
             + Add Card
           </button>

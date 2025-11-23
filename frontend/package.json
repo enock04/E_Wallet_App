@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@expo/webpack-config": "^19.0.1",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
     "react": "^18.2.0",

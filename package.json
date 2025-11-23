@@ -1,0 +1,31 @@
+{
+  "name": "e_wallet_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fix-imports.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enock04/E_Wallet_App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/enock04/E_Wallet_App/issues"
+  },
+  "homepage": "https://github.com/enock04/E_Wallet_App#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.10.1"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.6",
+    "@types/react-webcam": "^1.1.0",
+    "react-webcam": "^7.2.0"
+  }
+}

@@ -1,12 +1,20 @@
-# Dependencies
+# Node.js dependencies
 node_modules/
+
+# Logs
+logs/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Production builds
-build/
-dist/
+# Runtime data
+pids/
+*.pid
+*.seed
+
+# Coverage reports
+coverage/
 
 # Environment variables
 .env
@@ -15,83 +23,89 @@ dist/
 .env.test.local
 .env.production.local
 
-# IDE files
+# Editor folders and files
 .vscode/
 .idea/
-*.swp
-*.swo
+*.sublime-project
+*.sublime-workspace
 
-# OS generated files
+# OS files
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
+ehthumbs.db
 
-# Logs
-logs
-*.log
+# Temporary files
+*.tmp
+*.temp
+*.bak
 
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
+# Build directories
+build/
+dist/
 
-# Coverage directory used by tools like istanbul
-coverage/
+# Miscellaneous caches and temp files
+.cache/
+.parcel-cache/
 
-# nyc test coverage
-.nyc_output
+# Next.js build output
+.next/
 
-# Dependency directories
-jspm_packages/
+# Nuxt.js build output
+.nuxt/
 
-# Optional npm cache directory
-.npm
+# Vuepress build output
+.vuepress/dist/
 
-# Optional REPL history
-.node_repl_history
-
-# Output of 'npm pack'
-*.tgz
-
-# Yarn Integrity file
-.yarn-integrity
-
-# dotenv environment variables file
-.env.test
-
-# parcel-bundler cache (https://parceljs.org/)
-.cache
-.parcel-cache
-
-# next.js build output
-.next
-
-# nuxt.js build output
-.nuxt
-
-# vuepress build output
-.vuepress/dist
-
-# Serverless directories
-.serverless
-
-# FuseBox cache
-.fusebox/
+# Serverless framework
+.serverless/
 
 # DynamoDB Local files
 .dynamodb/
 
-# TernJS port file
-.tern-port
+# Yarn Integrity file
+.yarn-integrity
 
-# Stores VSCode versions used for testing VSCode extensions
-.vscode-test
+# npm cache folders
+.npm/
 
-# Temporary folders
-tmp/
-temp/
+# Node REPL history
+.node_repl_history
+
+# Backup swap files
+*.swp
+*.swo
+
+# Test result folders
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# Ignore test files and folders
+tests/
+*.spec.js
+*.test.js
+*.spec.ts
+*.test.ts
+*.spec.tsx
+*.test.tsx
+e2e/
+
+# Ignore Postman collections and API testing related files
+*.postman_collection.json
+*.postman_environment.json
+E_Wallet_API_Collection.postman_collection.json
+API_Testing_Guide.md
+E_Wallet_Postman_Documentation.md
+Transaction_Pagination_API_Tests.postman_collection.json
+API_Testing_Guide.md
+E_Wallet_API_Collection.postman_collection.json
+E_Wallet_Postman_Documentation.md
+Transaction_Pagination_API_Tests.postman_collection.json
+
+# Python virtual environments
+.venv/
+
+# Ignore npm pack files
+*.tgz
