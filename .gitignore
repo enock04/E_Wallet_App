@@ -1,0 +1,111 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+
+# Coverage reports
+coverage/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor folders and files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Build directories
+build/
+dist/
+
+# Miscellaneous caches and temp files
+.cache/
+.parcel-cache/
+
+# Next.js build output
+.next/
+
+# Nuxt.js build output
+.nuxt/
+
+# Vuepress build output
+.vuepress/dist/
+
+# Serverless framework
+.serverless/
+
+# DynamoDB Local files
+.dynamodb/
+
+# Yarn Integrity file
+.yarn-integrity
+
+# npm cache folders
+.npm/
+
+# Node REPL history
+.node_repl_history
+
+# Backup swap files
+*.swp
+*.swo
+
+# Test result folders
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# Ignore test files and folders
+tests/
+*.spec.js
+*.test.js
+*.spec.ts
+*.test.ts
+*.spec.tsx
+*.test.tsx
+e2e/
+
+# Ignore Postman collections and API testing related files
+*.postman_collection.json
+*.postman_environment.json
+E_Wallet_API_Collection.postman_collection.json
+API_Testing_Guide.md
+E_Wallet_Postman_Documentation.md
+Transaction_Pagination_API_Tests.postman_collection.json
+API_Testing_Guide.md
+E_Wallet_API_Collection.postman_collection.json
+E_Wallet_Postman_Documentation.md
+Transaction_Pagination_API_Tests.postman_collection.json
+
+# Python virtual environments
+.venv/
+
+# Ignore npm pack files
+*.tgz

@@ -1,0 +1,177 @@
+body.dark-theme {
+  background: #1e2a47;
+  color: #dbeafe;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme a {
+  color: #90caf9;
+}
+
+body.dark-theme .auth-container {
+  background: #1b263b;
+  box-shadow: 0 10px 30px rgba(0, 0, 50, 0.7);
+  color: #cbd5e1;
+}
+
+body.dark-theme .auth-header > p,
+body.dark-theme .error-message,
+body.dark-theme .auth-link a {
+  color: #94a3b8;
+}
+
+body.dark-theme .auth-button {
+  background: #3b82f6;
+  color: white;
+}
+
+body.dark-theme .auth-button:hover {
+  background: #2563eb;
+}
+
+body.dark-theme .dashboard {
+  background: #0d1b2a;
+}
+
+body.dark-theme .card-item {
+  background: #1b263b;
+  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.1);
+  color: #cbd5e1;
+}
+
+body.dark-theme .card-item:hover {
+  box-shadow: 0 12px 40px rgba(255, 255, 255, 0.2);
+}
+
+body.dark-theme .header {
+  background: rgba(20, 30, 48, 0.95);
+  border-bottom: 1px solid rgba(144, 202, 249, 0.2);
+  box-shadow: 0 8px 32px rgba(144, 202, 249, 0.1);
+}
+
+body.dark-theme .header-title h1,
+body.dark-theme .header-title p {
+  color: #cbd5e1;
+}
+
+body.dark-theme .add-card-btn {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.8) 0%, rgba(37, 99, 235, 0.8) 100%);
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.5);
+}
+
+body.dark-theme .add-card-btn:hover {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.9) 0%, rgba(29, 78, 216, 0.9) 100%);
+  box-shadow: 0 12px 40px rgba(37, 99, 235, 0.7);
+}
+
+body.dark-theme .logout-btn {
+  background: #1e40af;
+  color: white;
+}
+
+body.dark-theme .logout-btn:hover {
+  background: #1e3a8a;
+}
+
+body.dark-theme .dashboard-content h1,
+body.dark-theme .dashboard-content > p,
+body.dark-theme .category-section h2,
+body.dark-theme .transactions-section h3,
+body.dark-theme .profile-header,
+body.dark-theme .profile-name,
+body.dark-theme .profile-email,
+body.dark-theme .profile-section .section-title,
+body.dark-theme .item-title,
+body.dark-theme .item-subtitle,
+body.dark-theme .pagination-info,
+body.dark-theme .welcome-text,
+body.dark-theme .username,
+body.dark-theme .metric-number,
+body.dark-theme .metric-label,
+body.dark-theme .section-title,
+body.dark-theme .action-label {
+  color: #cbd5e1;
+}
+
+body.dark-theme .footer {
+  background: #152c63;
+  border-top: 1px solid rgba(144, 202, 249, 0.2);
+  color: #94a3b8;
+}
+
+body.dark-theme .modal-content {
+  background: rgba(20, 30, 48, 0.95);
+  border: 1px solid rgba(59, 130, 246, 0.6);
+  color: #cbd5e1;
+  box-shadow: 0 20px 60px rgba(59, 130, 246, 0.3);
+}
+
+body.dark-theme .modal-header h2,
+body.dark-theme .modal-header p {
+  color: #cbd5e1;
+}
+
+body.dark-theme .upload-btn,
+body.dark-theme .scan-btn,
+body.dark-theme .cancel-btn,
+body.dark-theme .add-card-btn,
+body.dark-theme .close-btn,
+body.dark-theme .edit-btn,
+body.dark-theme .delete-btn,
+body.dark-theme .payment-method-btn,
+body.dark-theme .payment-submit-btn {
+  border-color: #3b82f6;
+  color: #93c5fd;
+  background: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme .upload-btn:hover,
+body.dark-theme .scan-btn:hover,
+body.dark-theme .cancel-btn:hover,
+body.dark-theme .add-card-btn:hover,
+body.dark-theme .close-btn:hover,
+body.dark-theme .edit-btn:hover,
+body.dark-theme .delete-btn:hover,
+body.dark-theme .payment-method-btn:hover,
+body.dark-theme .payment-submit-btn:hover {
+  background: #3b82f6;
+  color: white;
+}
+
+body.dark-theme .transaction-item {
+  border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+body.dark-theme .transaction-item:hover {
+  background: rgba(59, 130, 246, 0.1);
+}
+
+body.dark-theme .transaction-item.credit {
+  border-left: 4px solid #60a5fa;
+}
+
+body.dark-theme .transaction-item.debit {
+  border-left: 4px solid #f87171;
+}
+
+/* Bottom Navigation */
+body.dark-theme .bottom-nav {
+  background: #152c63;
+  border-top: 1px solid rgba(59, 130, 246, 0.3);
+  color: #94a3b8;
+  box-shadow: 0 -2px 8px rgba(59, 130, 246, 0.12);
+}
+
+body.dark-theme .nav-item:hover {
+  background: rgba(59, 130, 246, 0.1);
+}
+
+body.dark-theme .nav-item.active {
+  color: #3b82f6;
+}
+
+body.dark-theme .nav-item.active .nav-label {
+  color: #3b82f6;
+}

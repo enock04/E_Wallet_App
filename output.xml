@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.1 on win32)" generated="2025-11-23T02:13:03.579282" rpa="false" schemaversion="5">
+<suite id="s1" name="E Wallet App" source="C:\Users\HP\OneDrive\Documents\E_Wallet_App\tests\e_wallet_app.robot">
+<kw name="Open Browser To Login Page" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-23T02:13:05.131263" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/login'.</msg>
+<arg>${BASE_URL}/login</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-23T02:13:05.130517" elapsed="9.770827"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-23T02:13:14.901826" elapsed="0.377875"/>
+</kw>
+<status status="PASS" start="2025-11-23T02:13:05.128637" elapsed="10.151323"/>
+</kw>
+<test id="s1-t1" name="Signup Existing User Error" line="35">
+<kw name="Go To Signup Page">
+<msg time="2025-11-23T02:13:15.301057" level="FAIL">No keyword with name 'Go To Signup Page' found. Did you try using keyword 'SeleniumLibrary.Go To' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" start="2025-11-23T02:13:15.300908" elapsed="0.000305">No keyword with name 'Go To Signup Page' found. Did you try using keyword 'SeleniumLibrary.Go To' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<kw name="Input Signup Form">
+<arg>existinguser@example.com</arg>
+<arg>+1234567890</arg>
+<arg>TestPass123!</arg>
+<arg>TestPass123!</arg>
+<status status="NOT RUN" start="2025-11-23T02:13:15.354277" elapsed="0.000128"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>User with this email already exists</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-11-23T02:13:15.366594" elapsed="0.001835"/>
+</kw>
+<status status="FAIL" start="2025-11-23T02:13:15.280144" elapsed="0.102407">No keyword with name 'Go To Signup Page' found. Did you try using keyword 'SeleniumLibrary.Go To' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<test id="s1-t2" name="Login With OTP Verification" line="40">
+<kw name="Go To Login Page">
+<msg time="2025-11-23T02:13:15.571126" level="FAIL">No keyword with name 'Go To Login Page' found. Did you try using keyword 'SeleniumLibrary.Go To' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" start="2025-11-23T02:13:15.570975" elapsed="0.000278">No keyword with name 'Go To Login Page' found. Did you try using keyword 'SeleniumLibrary.Go To' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<kw name="Input Login Form">
+<arg>ntwarienock1@gmail.com</arg>
+<arg>ntwari@04!</arg>
+<status status="NOT RUN" start="2025-11-23T02:13:15.580489" elapsed="0.000121"/>
+</kw>
+<kw name="Go To OTP Verification Page">
+<status status="NOT RUN" start="2025-11-23T02:13:15.611389" elapsed="0.000372"/>
+</kw>
+<kw name="Input OTP Code">
+<arg>123456</arg>
+<status status="NOT RUN" start="2025-11-23T02:13:15.616283" elapsed="0.000134"/>
+</kw>
+<kw name="Go To Profile Page">
+<status status="NOT RUN" start="2025-11-23T02:13:15.625318" elapsed="0.000114"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Welcome, ntwarienock1@gmail.com</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-11-23T02:13:15.676306" elapsed="0.000132"/>
+</kw>
+<status status="FAIL" start="2025-11-23T02:13:15.506641" elapsed="0.238060">No keyword with name 'Go To Login Page' found. Did you try using keyword 'SeleniumLibrary.Go To' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<test id="s1-t3" name="Navigation Test" line="47">
+<kw name="Go To Login Page">
+<msg time="2025-11-23T02:13:15.954324" level="FAIL">No keyword with name 'Go To Login Page' found. Did you try using keyword 'SeleniumLibrary.Go To' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" start="2025-11-23T02:13:15.954199" elapsed="0.000232">No keyword with name 'Go To Login Page' found. Did you try using keyword 'SeleniumLibrary.Go To' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<kw name="Go To Profile Page">
+<status status="NOT RUN" start="2025-11-23T02:13:15.995357" elapsed="0.000544"/>
+</kw>
+<status status="FAIL" start="2025-11-23T02:13:15.915266" elapsed="0.127482">No keyword with name 'Go To Login Page' found. Did you try using keyword 'SeleniumLibrary.Go To' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-11-23T02:13:16.234077" elapsed="9.264680"/>
+</kw>
+<status status="FAIL" start="2025-11-23T02:13:03.583292" elapsed="21.915679"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="E Wallet App" id="s1" pass="0" fail="3" skip="0">E Wallet App</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
