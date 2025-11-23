@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
+
 const directoryPath = path.join(__dirname, 'frontend', 'src', 'pages');
 
 function replaceTsxExtensions(dir) {

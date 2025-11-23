@@ -1,5 +1,6 @@
 -- Updated SQL script to fix missing 'password' column issue for 'users' table
 
+
 DROP TABLE IF EXISTS public.users;
 
 CREATE TABLE public.users (

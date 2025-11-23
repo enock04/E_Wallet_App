@@ -1,5 +1,6 @@
 -- PostgreSQL schema for E_Wallet_App Supabase backend
 
+
 -- Users table
 DROP TABLE IF EXISTS public.users;
 CREATE TABLE public.users (
