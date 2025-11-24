@@ -24,8 +24,12 @@
     "@types/node": "^24.10.1"
   },
   "dependencies": {
+    "@expo/config-plugins": "^54.0.2",
+    "@expo/webpack-config": "^19.0.1",
     "@sendgrid/mail": "^8.1.6",
     "@types/react-webcam": "^1.1.0",
-    "react-webcam": "^7.2.0"
+    "react-webcam": "^7.2.0",
+    "semver": "^7.7.3",
+    "xml2js": "^0.6.2"
   }
 }
